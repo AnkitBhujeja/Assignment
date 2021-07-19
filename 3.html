@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Iframe</title>
+	<style type="text/css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	html{
+			background-color: black;
+	}
+	   .main{
+	   	width: 100%;
+	   	height: 100%;
+	   display: flex;
+	   }
+	   body{
+	   	background-color: antiquewhite ;
+	   }
+	    .header{
+	    	position: relative;
+	    	color: green;
+	    	letter-spacing: 1px;
+		margin-bottom: -40px;
+	    	animation: text 3s infinite;
+	    }
+		h1{
+			text-align: center;
+		}
+		.para{
+			margin-top: 30px;
+
+			width: 60%;
+			float: left;
+			border: 2px solid black;
+			background:  linear-gradient(to bottom right,orange,red);	
+		}
+		.parag{
+			color: beige;
+			padding: 40px;
+			font-size: 21px;
+			font-family: 'Source Sans Pro', sans-serif;
+		}
+		.ifra{
+			margin-left: 50px;
+		
+			float: left;
+			width: 35%;
+		 	
+		 	height: 480px;
+
+		}
+		iframe{
+			height: 100%;
+			width: 100%;
+		}
+		@keyframes text{
+		0%{
+			margin-bottom: -40px;
+		}
+		30%{
+			letter-spacing: 3px;
+			margin-bottom: -40px;
+		}
+		85%{
+			letter-spacing: 1.8px;
+			margin-bottom: -40px;
+		}
+	}
+	</style>
+</head>
+<body >
+	
+    
+    <div class="main">
+    <div class="para">
+    	<div>
+    	<h1 style="text-align: center;">Dayanand College</h1>
+       </div>
+	<p class="parag" >Dayanand College, Hisar welcomes you and bids you to become a member of our mission for excellence with us does not only mean 
+	academic achievement. This it does, but it has other elements also, like social responsibility and personal nobility. 
+	Dayanand College may not take you to the sky, but it promises to show you the sky and the path to the sky also. Here, 
+	you will take one of the many steps you will need to know the world, to explore the earth and to reach the sky. Equally 
+	important with us is to inculcate in you the spirit of love and sympathy, the spirit of happiness and fulfillment. Love 
+	the world to fulfill yourself and sympathize with the lesser to spread happiness. Think of yourself but do not be forgetful of others also.
+
+	Here, in this college, you may not become the great you want to be, but here you will learn the need to be the great you must be. 	
+	Greatness is a product of honesty and nobility. Greatness is fertilized by love and understanding.
+	Here you should learn to attach yourself to great causes, to good missions, to noble visions. Here, 
+	you should get your key to success and happiness and fulfillment.</p>
+	</div>
+	
+
+	<div class="ifra">
+		<div>
+		<h1>Read more here....</h1>
+	    </div>
+      <iframe src="https://www.dnc.ac.in/" title="iframe example">
+     </iframe>
+     </div>
+</div>
+</body>
+</html>

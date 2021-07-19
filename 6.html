@@ -1,0 +1,60 @@
+<html>
+    <head>
+
+      <title>Audio and Animation</title>
+        <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <style type="text/css">
+  	html,body{
+  		max-width: 100%;
+  		overflow-x: hidden;
+  	}
+  </style>
+    </head>    
+    <body style="background-image: url('images/8.jfif');background-repeat: no-repeat;background-size: cover;background-position: fixed;"> 
+    	<div>
+    	<h1 style="color: violet;text-align: center;" class="animate__animated animate__pulse animate__infinite	">Speeches</h1>
+    </div>
+    	<div>
+    	<div style="height: 300px;text-align: center;"> 
+      <img src="images/3.png" id="myImage">
+      </div>
+      </div>
+      <div>
+      	  <audio style="margin:10px 500px;" src="audio/1.mp3" 
+      controls 
+      onplay="playAnimation()" 
+      onpause="pauseAnimation()"      
+      >
+      </div>
+      <div>
+      	  <audio style="margin:10px 500px;" src="audio/2.mp3" 
+      controls 
+      onplay="playAnimation()" 
+      onpause="pauseAnimation()"      
+      >
+      </div>
+      <div>
+      	  <audio style="margin:10px 500px;" src="audio/3.mp3" 
+      controls 
+      onplay="playAnimation()" 
+      onpause="pauseAnimation()"      
+      >
+      </div>
+    
+
+
+      <script>
+        var selectImg=document.getElementById("myImage");
+        function playAnimation(){
+          selectImg.src="images/2.gif";
+        }
+        function pauseAnimation(){
+          selectImg.src="images/3.png";
+        }
+      </script>
+
+    </body>    
+  </html>  
